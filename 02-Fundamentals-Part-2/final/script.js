@@ -214,7 +214,7 @@ const newLength = friends.push('Jay');
 console.log(friends);
 console.log(newLength);
 
-friends.unshift('John');
+friends.unshift('John'); //Add to begining of array
 console.log(friends);
 
 // Remove elements
@@ -227,12 +227,12 @@ friends.shift(); // First
 console.log(friends);
 
 console.log(friends.indexOf('Steven'));
-console.log(friends.indexOf('Bob'));
+console.log(friends.indexOf('Bob'));  // If not present -1 is returned
 
 friends.push(23);
-console.log(friends.includes('Steven'));
-console.log(friends.includes('Bob'));
-console.log(friends.includes(23));
+console.log(friends.includes('Steven')); // true
+console.log(friends.includes('Bob')); // false
+console.log(friends.includes(23)); // true
 
 if (friends.includes('Steven')) {
   console.log('You have a friend called Steven');
