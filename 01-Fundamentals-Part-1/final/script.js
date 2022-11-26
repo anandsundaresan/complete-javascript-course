@@ -245,7 +245,7 @@ console.log(String(23), 23);
 // type coercion
 // + operator converts number to string
 console.log('I am ' + 23 + ' years old');
-// - operator converts string to number
+// - * / operators convert strings to numbers
 console.log('23' - '10' - 3);
 console.log('23' / '2');
 
