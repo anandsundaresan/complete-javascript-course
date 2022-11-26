@@ -280,6 +280,7 @@ const jonasArray = [
   ['Michael', 'Peter', 'Steven']
 ];
 
+// Object literal syntax for creating objects
 const jonas = {
   firstName: 'Jonas',
   lastName: 'Schmedtmann',
