@@ -416,6 +416,7 @@ if (day === 'monday') {
 
 ////////////////////////////////////
 // Statements and Expressions
+// Expression is something which produces a value
 3 + 4
 1991
 true && false && !false
