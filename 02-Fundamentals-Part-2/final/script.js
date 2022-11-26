@@ -347,6 +347,7 @@ const jonas = {
   //   return 2037 - this.birthYeah;
   // }
 
+// this keyword equals to the object on which the method is called
   calcAge: function () {
     this.age = 2037 - this.birthYeah;
     return this.age;
