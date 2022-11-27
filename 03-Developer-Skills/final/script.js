@@ -18,6 +18,10 @@
   }
 }
 */
+// Install VS Code extension Live Server
+// Install NodeJS
+// npm install live-server --global
+// live-server
 // Remember, we're gonna use strict mode in all scripts now!
 'use strict';
 
