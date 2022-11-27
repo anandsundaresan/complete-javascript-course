@@ -1,3 +1,23 @@
+// Install VS Code extension Monkai Pro
+// VS Code Settings --> Workbench: Color Theme --> Monkai Pro
+// Install VS Code extension vscode-icons
+// VS Code Settings --> Workbench: Icon Theme --> vscode-icons
+// Install VS Code extension Prettier - Code formatter
+// VS Code Settings --> Default Formatter --> Prettier - Code formatter
+// VS Code Settings --> Format on Save --> Enable
+// Custom prettier settings can be enabled using .prettierrc file (https://prettier.io/docs/en/options.html)
+// VS Code Settings --> Configure User Snippets --> New Global Snippet File
+/*
+{
+  // Example:
+  "Print to console": {
+    "scope": "javascript,typescript",
+    "prefix": "cl",
+    "body": ["console.log();"],
+    "description": "Log output to console"
+  }
+}
+*/
 // Remember, we're gonna use strict mode in all scripts now!
 'use strict';
 
