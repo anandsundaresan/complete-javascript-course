@@ -67,6 +67,8 @@ Javascript Engine  +  WEB API's (DOM, Timers, Fetch API)  +  Callback Queue --> 
 JAVASCRIPT NODEJS RUNTIME :
 
 Javascript Engine  +  C++ BINDINGS AND THREAD POOL  +  Callback Queue
+
+CALL STACK AND EXECUTION CONTEXT : Refer course materials
 */
 ///////////////////////////////////////
 // Scoping in Practice
