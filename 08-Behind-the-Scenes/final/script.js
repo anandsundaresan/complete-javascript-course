@@ -62,7 +62,7 @@ Javascript Source Code  -------> Abstract Syntax Tree(AST)   -------->  Un Optim
 
 JAVASCRIPT BROWSER RUNTIME :
 
-
+Javascript Engine  +  WEB API's (DOM, Timers, Fetch API)  +  Callback Queue --> Event sent to JS Engine Call Stack
 */
 ///////////////////////////////////////
 // Scoping in Practice
