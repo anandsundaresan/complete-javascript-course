@@ -28,6 +28,17 @@ JAVASCRIPT IS :
 9) NON-BLOCKING EVENT LOOP --> To overcome the single threaded nature, Javascript engine has a concurrency model so that it can run
                                multiple tasks at same time so that we have a non-blocking nature. This is done using an event loop.
                                Long running tasks are put in background and they join the main thread once they are finished.
+
+JAVASCRIPT ENGINE : 
+
+Program that execute Javascript code. Google chrome and NodeJS use google's V8 engine. Other browsers might use its own versions of 
+javascript engines.
+
+Engine comprises of : 
+
+1) Call Stack --> This is where our code is executed using execution contexts.
+
+2) Heap --> Where objects are stored in memory
 */
 ///////////////////////////////////////
 // Scoping in Practice
