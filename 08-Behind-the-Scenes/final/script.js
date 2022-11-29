@@ -48,12 +48,21 @@ These are manners in which source code is coverted to machine code
 
 2) INTERPRETED --> Interpreter runs through source code and executes it line by line. Code still needs to be converted to machine code.
 
-3) JUST-IN-TIME(JIT) COMPILATION
+3) JUST-IN-TIME(JIT) COMPILATION -->
 
 Entire source code is converted to machine code and executed immediately. No portable binary file is created in this process. With this
 the code is not slow like interpreted engine.
 
 Javascript uses JIT Compilation.
+
+                        PARSED       (Data Structure)        COMPILED          EXECUTION             COMPILED
+Javascript Source Code  -------> Abstract Syntax Tree(AST)   -------->  Un Optimized Machine Code   ----------> Optimized Machine Code   ----> EXECUTION
+                                 In this stage each line is    JIT         Happens in call stack                Happens in special thread,
+                                      checked for syntax                                                        Cant be accessed from code
+
+JAVASCRIPT BROWSER RUNTIME :
+
+
 */
 ///////////////////////////////////////
 // Scoping in Practice
