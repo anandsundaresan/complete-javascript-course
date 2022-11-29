@@ -1,5 +1,34 @@
 'use strict';
+/*
+JAVASCRIPT IS : 
 
+1) HIGH LEVEL --> Hardware level abstraction unlike languages like C so that we dont need to manage hardware resources like
+                  memory. Downside of this is programs will never be as fast as non abstracted language.
+                  
+2) GARBAGE COLLECTED --> Javascript engine which removes old un wanted objects from memory so that it does not clog the memory.
+
+3) INTERPRETED OR JUST IN TIME COMPILED --> Javascript engine compiles human readable code to machine code ( 0 and 1 ).
+
+4) MULTI-PARADIGM --> Paradigm(Imperative or Declarative) is an approach of structuring code. Three paradigms in Javascript :
+                      -> Procedural Programming - Organising code in linear way with some functions in between.
+                      -> Object Oriented Programming(OOP) 
+                      -> Functional Programming
+                      
+5) PROTOTYPE-BASED OBJECT-ORIENTED --> Almost everything in Javascript is objects except primitive things like numbers, strings etc.
+                                       eg : Array object inherits methods from Array prototype.
+                                       
+6) FIRST CLASS FUNCTIONS --> Functions are treated as variables. We can pass them into functions and return them from other functions.
+                             This is very powerful and is called functional programming.
+                             
+7) DYNAMIC --> No type defenitions required. Types are decided at runtime. Datatype of variable is automatically changed(Type coercion).
+               Javascript with strong types is Typescript.
+               
+8) SINGLE-THREADED --> Javascript runs in a single thread. So it can do only one thing at a time.
+
+9) NON-BLOCKING EVENT LOOP --> To overcome the single threaded nature, Javascript engine has a concurrency model so that it can run
+                               multiple tasks at same time so that we have a non-blocking nature. This is done using an event loop.
+                               Long running tasks are put in background and they join the main thread once they are finished.
+*/
 ///////////////////////////////////////
 // Scoping in Practice
 
