@@ -7,7 +7,7 @@ JAVASCRIPT IS :
                   
 2) GARBAGE COLLECTED --> Javascript engine which removes old un wanted objects from memory so that it does not clog the memory.
 
-3) INTERPRETED OR JUST IN TIME COMPILED --> Javascript engine compiles human readable code to machine code ( 0 and 1 ).
+3) INTERPRETED OR JUST IN TIME COMPILED --> Javascript engine compiles human readable code to machine code ( 0 and 1 ) line by line.
 
 4) MULTI-PARADIGM --> Paradigm(Imperative or Declarative) is an approach of structuring code. Three paradigms in Javascript :
                       -> Procedural Programming - Organising code in linear way with some functions in between.
@@ -39,6 +39,21 @@ Engine comprises of :
 1) Call Stack --> This is where our code is executed using execution contexts.
 
 2) Heap --> Where objects are stored in memory
+
+COMPILED VS INTERPRETED : 
+
+These are manners in which source code is coverted to machine code
+
+1) COMPILED --> Entire code is converted to machine code at once and written to binary file that can be executed by computer.
+
+2) INTERPRETED --> Interpreter runs through source code and executes it line by line. Code still needs to be converted to machine code.
+
+3) JUST-IN-TIME(JIT) COMPILATION
+
+Entire source code is converted to machine code and executed immediately. No portable binary file is created in this process. With this
+the code is not slow like interpreted engine.
+
+Javascript uses JIT Compilation.
 */
 ///////////////////////////////////////
 // Scoping in Practice
