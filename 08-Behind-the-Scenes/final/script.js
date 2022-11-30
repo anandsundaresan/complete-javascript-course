@@ -7,7 +7,7 @@ JAVASCRIPT IS :
                   
 2) GARBAGE COLLECTED --> Javascript engine which removes old un wanted objects from memory so that it does not clog the memory.
 
-3) JUST IN TIME COMPILED --> Javascript engine compiles human readable code to machine code ( 0 and 1 ) line by line.
+3) JUST IN TIME COMPILED --> Javascript engine compiles human readable code to machine code ( 0 and 1 )
 
 4) MULTI-PARADIGM --> Paradigm(Imperative or Declarative) is an approach of structuring code. Three paradigms in Javascript :
                       -> Procedural Programming - Organising code in linear way with some functions in between.
