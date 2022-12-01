@@ -137,8 +137,8 @@ const addExpr = function (a, b) {
 var addArrow = (a, b) => a + b;
 
 // Example
-console.log(undefined);
-//undefined is falsy value, so !undefined = true
+console.log(numProducts);
+//undefined is falsy value, so !numProducts = true
 if (!numProducts) deleteShoppingCart();
 
 var numProducts = 10;
