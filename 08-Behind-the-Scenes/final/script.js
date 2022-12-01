@@ -147,6 +147,7 @@ function deleteShoppingCart() {
   console.log('All products deleted!');
 }
 
+//Variables declared with var will create a property in global window object, whereas the ones declared with let and const dont
 var x = 1;
 let y = 2;
 const z = 3;
