@@ -74,43 +74,39 @@ CALL STACK, EXECUTION CONTEXT AND SCOPING : Refer course materials
 // Scoping in Practice
 
 /*
+'use strict';
+
 function calcAge(birthYear) {
   const age = 2037 - birthYear;
-
   function printAge() {
-    let output = `${firstName}, you are ${age}, born in ${birthYear}`;
-    console.log(output);
-
+    let output = `You are ${firstName},aged ${age} born in ${birthYear}`; // age birthYear from calcAge function scope(parent)
+    // firstName from Global scope
+    console.log(output); // Here firstName will be Anand as variable lookup gets value from global scope.
+    //Block Scope
     if (birthYear >= 1981 && birthYear <= 1996) {
+      const firstName = 'Srinath';
       var millenial = true;
-      // Creating NEW variable with same name as outer scope's variable
-      const firstName = 'Steven';
-
-      // Reasssigning outer scope's variable
-      output = 'NEW OUTPUT!';
-
-      const str = `Oh, and you're a millenial, ${firstName}`;
-      console.log(str);
-
-      function add(a, b) {
-        return a + b;
+      const str = `Oh, and you are a millenial, ${firstName}`;
+      console.log(str); //Srinath will be printed instead of Anand as lookup checks current scope first, only then it looks in parent and global scope.
+      function add(num1, num2) {
+        return num1 + num2;
       }
+      output = 'New Output'; //Reassigning outerscope's variable
     }
-    // console.log(str);
-    console.log(millenial);
-    // console.log(add(2, 3));
-    console.log(output);
+    //console.log(str); //Reference error, const and let are block scoped
+    console.log(millenial); // var in block wont throw error as it is function scoped and not block scoped
+    //console.log(add(2, 3)); //Reference error, functions are block scoped in strict mode, If we disable strict mode, this will work as it becomes function scoped.
+    console.log(output); //Prints reassigned variable from current scope, will not check in block scope
   }
   printAge();
-
   return age;
 }
 
-const firstName = 'Jonas';
-calcAge(1991);
-// console.log(age);
-// printAge();
+const firstName = 'Anand'; //Global Scope
 
+calcAge(1989);
+//printAge(); //Reference error, printAge() not in global scope
+//console.log(age); //Reference Error, age not in global scope
 
 ///////////////////////////////////////
 // Hoisting and TDZ in Practice
