@@ -138,6 +138,7 @@ var addArrow = (a, b) => a + b;
 
 // Example
 console.log(undefined);
+//undefined is falsy value, so !undefined = true
 if (!numProducts) deleteShoppingCart();
 
 var numProducts = 10;
