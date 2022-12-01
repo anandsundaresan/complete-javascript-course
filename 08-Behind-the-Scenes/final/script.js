@@ -68,7 +68,7 @@ JAVASCRIPT NODEJS RUNTIME :
 
 Javascript Engine  +  C++ BINDINGS AND THREAD POOL  +  Callback Queue
 
-CALL STACK AND EXECUTION CONTEXT : Refer course materials
+CALL STACK, EXECUTION CONTEXT AND SCOPING : Refer course materials
 */
 ///////////////////////////////////////
 // Scoping in Practice
