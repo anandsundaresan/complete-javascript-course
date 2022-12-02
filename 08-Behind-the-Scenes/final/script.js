@@ -159,11 +159,11 @@ console.log(z === window.z);
 
 ///////////////////////////////////////
 // The this Keyword in Practice
-console.log(this);
+console.log(this); // Here this will be the window object
 
 const calcAge = function (birthYear) {
   console.log(2037 - birthYear);
-  console.log(this);
+  console.log(this);  // this will be undefined for regular function in strict mode, in non strict mode it will be global window object.
 };
 calcAge(1991);
 
