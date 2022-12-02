@@ -195,7 +195,7 @@ f(); // this will be undefined as normal function in strict mode
 
 ///////////////////////////////////////
 // Regular Functions vs. Arrow Functions
-// var firstName = 'Matilda';
+// var firstName = 'Matilda'; // this can create a property in global window object and can be picked up by greet method
 
 const jonas = {
   firstName: 'Jonas',
@@ -213,15 +213,15 @@ const jonas = {
 
     // Solution 2
     const isMillenial = () => {
-      console.log(this);
+      console.log(this); 
       console.log(this.year >= 1981 && this.year <= 1996);
     };
-    isMillenial();
+    isMillenial(); 
   },
-
+// Never use arrow arrow function as method
   greet: () => {
-    console.log(this);
-    console.log(`Hey ${this.firstName}`);
+    console.log(this); // Here this will be global object window
+    console.log(`Hey ${this.firstName}`); // undefined
   },
 };
 jonas.greet();
@@ -236,7 +236,7 @@ addExpr(2, 5);
 addExpr(2, 5, 8, 12);
 
 var addArrow = (a, b) => {
-  console.log(arguments);
+  console.log(arguments); // arguments property is not available for arrow functions
   return a + b;
 };
 addArrow(2, 5, 8);
