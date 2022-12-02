@@ -213,7 +213,7 @@ const jonas = {
 
     // Solution 2
     const isMillenial = () => {
-      console.log(this); 
+      console.log(this); // arrow functions does not have its own this keyword, but uses the this value from parent scope which is jonas here
       console.log(this.year >= 1981 && this.year <= 1996);
     };
     isMillenial(); 
