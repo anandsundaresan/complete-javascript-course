@@ -297,5 +297,6 @@ jessicaCopy.family.push('John');
 
 console.log('Before marriage:', jessica2);
 console.log('After marriage: ', jessicaCopy);
+// Here the inner array of both jessica2 and jessicaCopy are changed because Object.assign() is a shallow copy, not a deep copy.
 */
 
