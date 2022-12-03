@@ -258,7 +258,7 @@ const friend = me;
 friend.age = 27;
 console.log('Friend:', friend);
 console.log('Me', me);
-
+// const variable is immutable only for primitives, not refernce types
 
 ///////////////////////////////////////
 // Primitives vs. Objects in Practice
