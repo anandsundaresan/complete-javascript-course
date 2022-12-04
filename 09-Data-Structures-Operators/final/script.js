@@ -722,6 +722,7 @@ console.log('---- OR ----');
 console.log(3 || 'Jonas');
 console.log('' || 'Jonas');
 console.log(true || 0);
+// If both are falsy, last one is returned
 console.log(undefined || null);
 
 console.log(undefined || 0 || '' || 'Hello' || 23 || null);
