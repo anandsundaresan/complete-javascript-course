@@ -2,7 +2,7 @@
 'use strict';
 
 const weekdays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
-// For evaluating inside object enclose with []
+// For evaluating keys inside object enclose with []
 const openingHours = {
   [weekdays[3]]: {
     open: 12,
