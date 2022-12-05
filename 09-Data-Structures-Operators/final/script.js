@@ -1,3 +1,4 @@
+// Start going through from the bottom of the page
 'use strict';
 
 const weekdays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
