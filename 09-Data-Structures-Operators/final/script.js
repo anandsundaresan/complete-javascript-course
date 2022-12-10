@@ -377,6 +377,8 @@ console.log([...question.values()]);
 
 ///////////////////////////////////////
 // Maps: Fundamentals
+// Objects --> Only string keys
+// Maps --> Keys of any datatype
 const rest = new Map();
 rest.set('name', 'Classico Italiano');
 rest.set(1, 'Firenze, Italy');
