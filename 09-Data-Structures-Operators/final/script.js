@@ -341,6 +341,7 @@ for (const [min, event] of gameEvents) {
 /*
 ///////////////////////////////////////
 // Maps: Iteration
+// Create map using array of arrays
 const question = new Map([
   ['question', 'What is the best programming language in the world?'],
   [1, 'C'],
