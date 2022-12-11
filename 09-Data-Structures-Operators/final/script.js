@@ -354,11 +354,13 @@ const question = new Map([
 console.log(question);
 
 // Convert object to map
+// Object.entries(openingHours) is in array of arrays format
 console.log(Object.entries(openingHours));
 const hoursMap = new Map(Object.entries(openingHours));
 console.log(hoursMap);
 
 // Quiz app
+// Map is iterable and Object is not
 console.log(question.get('question'));
 for (const [key, value] of question) {
   if (typeof key === 'number') console.log(`Answer ${key}: ${value}`);
