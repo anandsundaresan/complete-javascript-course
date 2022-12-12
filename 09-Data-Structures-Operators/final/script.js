@@ -278,6 +278,8 @@ checkMiddleSeat('11B');
 checkMiddleSeat('23C');
 checkMiddleSeat('3E');
 
+// Boxing : We can call methods only on objects. In order for us to call methods on strings, javascript converts string to a object and backed to string after operation is complete.
+// This process is called boxing.
 console.log(new String('jonas'));
 console.log(typeof new String('jonas'));
 
