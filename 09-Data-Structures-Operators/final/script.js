@@ -213,6 +213,7 @@ const announcement =
 
 console.log(announcement.replace('door', 'gate'));
 // console.log(announcement.replaceAll('door', 'gate'));
+// Regular expression
 console.log(announcement.replace(/door/g, 'gate'));
 
 // Booleans
