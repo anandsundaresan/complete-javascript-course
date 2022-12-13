@@ -33,6 +33,7 @@ createBooking('LH123', undefined, 1000);
 
 ///////////////////////////////////////
 // How Passing Arguments Works: Values vs. Reference
+// Javascript only supports passing by value, not passing by reference even though it looks like we are using reference
 const flight = 'LH234';
 const jonas = {
   name: 'Jonas Schmedtmann',
