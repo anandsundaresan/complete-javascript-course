@@ -342,7 +342,8 @@ booker();
 booker();
 
 console.dir(booker);
-
+// Closure makes a function remember all the variables that existed at functions birth place
+// Any function has access to variables in the execution contexts were it was created
 
 ///////////////////////////////////////
 // More Closure Examples
