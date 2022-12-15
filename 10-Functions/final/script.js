@@ -171,6 +171,7 @@ book.call(swiss, ...flightData);
 
 ///////////////////////////////////////
 // The bind Method
+// bind method does not immedieately call function like call and apply methods
 // book.call(eurowings, 23, 'Sarah Williams');
 
 const bookEW = book.bind(eurowings);
