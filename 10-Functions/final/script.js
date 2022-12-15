@@ -119,6 +119,7 @@ greetArr('Hi')('Jonas');
 
 ///////////////////////////////////////
 // The call and apply Methods
+// These are used to set this key word
 const lufthansa = {
   airline: 'Lufthansa',
   iataCode: 'LH',
