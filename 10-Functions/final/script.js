@@ -194,6 +194,7 @@ lufthansa.buyPlane = function () {
 };
 // lufthansa.buyPlane();
 
+// We cant use call and apply method in handler because it will immedeately call the function, instead bind will return a function
 document
   .querySelector('.buy')
   .addEventListener('click', lufthansa.buyPlane.bind(lufthansa));
