@@ -315,7 +315,7 @@ movements.forEach(function (mov, i, arr) {
 // 1: function(450)
 // 2: function(400)
 // ...
-
+// continue and break do not work with forEach, use for-of for this
 
 ///////////////////////////////////////
 // forEach With Maps and Sets
