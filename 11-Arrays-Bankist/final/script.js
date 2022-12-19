@@ -532,6 +532,7 @@ console.log(avg1, avg2);
 
 ///////////////////////////////////////
 // The find Method
+// returns first element of the array which satisfies condition
 const firstWithdrawal = movements.find(mov => mov < 0);
 console.log(movements);
 console.log(firstWithdrawal);
