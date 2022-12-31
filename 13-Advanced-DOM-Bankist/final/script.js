@@ -130,6 +130,7 @@ const handleHover = function (e) {
 };
 
 // Passing "argument" into handler
+// mouseenter does not bubble
 nav.addEventListener('mouseover', handleHover.bind(0.5));
 nav.addEventListener('mouseout', handleHover.bind(1));
 
