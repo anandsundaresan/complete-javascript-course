@@ -410,12 +410,14 @@ const randomInt = (min, max) =>
 const randomColor = () =>
   `rgb(${randomInt(0, 255)},${randomInt(0, 255)},${randomInt(0, 255)})`;
 
+// e.target is original element where event happened and all parent handlers get same event due to bubbling
+// e.currentTarget and this is same and is element on which event is attached
 document.querySelector('.nav__link').addEventListener('click', function (e) {
   this.style.backgroundColor = randomColor();
   console.log('LINK', e.target, e.currentTarget);
   console.log(e.currentTarget === this);
 
-  // Stop propagation
+  // Stop propagation or stop bubbling
   // e.stopPropagation();
 });
 
@@ -428,7 +430,7 @@ document.querySelector('.nav').addEventListener('click', function (e) {
   this.style.backgroundColor = randomColor();
   console.log('NAV', e.target, e.currentTarget);
 });
-
+// By default, events are not listened in capture phase, this can be changed by passing third argument in event handler to true
 
 ///////////////////////////////////////
 // DOM Traversing
