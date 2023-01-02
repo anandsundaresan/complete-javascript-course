@@ -149,9 +149,9 @@ const stickyNav = function (entries) {
 };
 
 const headerObserver = new IntersectionObserver(stickyNav, {
-  root: null,
-  threshold: 0,
-  rootMargin: `-${navHeight}px`,
+  root: null, // scroll window
+  threshold: 0, // % overlap to target when intersection event trigerred
+  rootMargin: `-${navHeight}px`, // adding a pre buffer to intersection
 });
 
 headerObserver.observe(header);
