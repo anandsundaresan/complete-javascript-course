@@ -501,10 +501,12 @@ document.addEventListener('DOMContentLoaded', function (e) {
   console.log('HTML parsed and DOM tree built!', e);
 });
 
+// load --> event produced after all images and css are also loaded
 window.addEventListener('load', function (e) {
   console.log('Page fully loaded', e);
 });
 
+// beforeunload --> happens just before user closes the web page, can be used ask confirmation to leave page
 window.addEventListener('beforeunload', function (e) {
   e.preventDefault();
   console.log(e);
