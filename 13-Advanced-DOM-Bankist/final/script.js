@@ -496,6 +496,7 @@ observer.observe(section1);
 
 ///////////////////////////////////////
 // Lifecycle DOM Events
+// DOMContentLoaded --> this event is produced after html and javascript are parsed and loaded, does not wait for html and other externals
 document.addEventListener('DOMContentLoaded', function (e) {
   console.log('HTML parsed and DOM tree built!', e);
 });
