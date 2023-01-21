@@ -478,13 +478,14 @@ window.addEventListener('scroll', function () {
 
 ///////////////////////////////////////
 // Sticky navigation: Intersection Observer API
-
+// entries refers to thresholds of observation 
 const obsCallback = function (entries, observer) {
   entries.forEach(entry => {
     console.log(entry);
   });
 };
 
+// null is entire viewport
 const obsOptions = {
   root: null,
   threshold: [0, 0.2],
