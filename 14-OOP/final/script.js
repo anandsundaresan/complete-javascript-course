@@ -27,6 +27,7 @@ const jack = new Person('Jack', 1975);
 
 console.log(jonas instanceof Person);
 
+// Static method
 Person.hey = function () {
   console.log('Hey there 👋');
   console.log(this);
